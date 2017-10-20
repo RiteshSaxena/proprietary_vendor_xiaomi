@@ -34,6 +34,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/land/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/xiaomi/land/proprietary/bin/loc_launcher:system/bin/loc_launcher \
     vendor/xiaomi/land/proprietary/bin/lowi-server:system/bin/lowi-server \
+    vendor/xiaomi/land/proprietary/bin/mm-qcamera-app:system/bin/mm-qcamera-app \
     vendor/xiaomi/land/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     vendor/xiaomi/land/proprietary/bin/msm_irqbalance:system/bin/msm_irqbalance \
     vendor/xiaomi/land/proprietary/bin/netmgrd:system/bin/netmgrd \
@@ -216,6 +217,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/land/proprietary/etc/surround_sound_3mic/surround_sound_rec_AZ.cfg:system/etc/surround_sound_3mic/surround_sound_rec_AZ.cfg \
     vendor/xiaomi/land/proprietary/etc/xtra_root_cert.pem:system/etc/xtra_root_cert.pem \
     vendor/xiaomi/land/proprietary/framework/com.qti.snapdragon.sdk.display.jar:system/framework/com.qti.snapdragon.sdk.display.jar \
+    vendor/xiaomi/land/proprietary/lib/hw/camera.msm8937.so:system/lib/hw/camera.msm8937.so \
     vendor/xiaomi/land/proprietary/lib/hw/consumerir.default.so:system/lib/hw/consumerir.default.so \
     vendor/xiaomi/land/proprietary/lib/hw/fingerprint.default.so:system/lib/hw/fingerprint.default.so \
     vendor/xiaomi/land/proprietary/lib/libDiracAPI_SHARED.so:system/lib/libDiracAPI_SHARED.so \
@@ -224,9 +226,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/land/proprietary/lib/libOmxVpp.so:system/lib/libOmxVpp.so \
     vendor/xiaomi/land/proprietary/lib/libRecoFace.so:system/lib/libRecoFace.so \
     vendor/xiaomi/land/proprietary/lib/libcom_fingerprints_service.so:system/lib/libcom_fingerprints_service.so \
+    vendor/xiaomi/land/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
+    vendor/xiaomi/land/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
+    vendor/xiaomi/land/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/xiaomi/land/proprietary/lib/libmorpho_memory_allocator.so:system/lib/libmorpho_memory_allocator.so \
     vendor/xiaomi/land/proprietary/lib/libmorpho_panorama.so:system/lib/libmorpho_panorama.so \
-    vendor/xiaomi/land/proprietary/lib/libvpplibrary.so:system/lib/libvpplibrary.so \
+    vendor/xiaomi/land/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/xiaomi/land/proprietary/lib/soundfx/libdirac.so:system/lib/soundfx/libdirac.so \
     vendor/xiaomi/land/proprietary/lib64/hw/consumerir.default.so:system/lib64/hw/consumerir.default.so \
     vendor/xiaomi/land/proprietary/lib64/hw/fingerprint.default.so:system/lib64/hw/fingerprint.default.so \
@@ -241,6 +246,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/land/proprietary/lib64/libfpservice.so:system/lib64/libfpservice.so \
     vendor/xiaomi/land/proprietary/lib64/libgnsspps.so:system/lib64/libgnsspps.so \
     vendor/xiaomi/land/proprietary/lib64/libvpplibrary.so:system/lib64/libvpplibrary.so \
+    vendor/xiaomi/land/proprietary/vendor/bin/mm-pp-daemon:system/vendor/bin/mm-pp-daemon \
     vendor/xiaomi/land/proprietary/vendor/bin/mm-pp-dpps:system/vendor/bin/mm-pp-dpps \
     vendor/xiaomi/land/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/xiaomi/land/proprietary/vendor/bin/qseeproxydaemon:system/vendor/bin/qseeproxydaemon \
@@ -1171,7 +1177,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/land/proprietary/vendor/lib/libmorpho_image_stab4.so:system/vendor/lib/libmorpho_image_stab4.so \
     vendor/xiaomi/land/proprietary/vendor/lib/libmorpho_panorama_gp.so:system/vendor/lib/libmorpho_panorama_gp.so \
     vendor/xiaomi/land/proprietary/vendor/lib/libois_lc898122.so:system/vendor/lib/libois_lc898122.so \
-    vendor/xiaomi/land/proprietary/vendor/lib/libomx-dts.so:system/vendor/lib/libomx-dts.so \
     vendor/xiaomi/land/proprietary/vendor/lib/liboptizoom.so:system/vendor/lib/liboptizoom.so \
     vendor/xiaomi/land/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
     vendor/xiaomi/land/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
@@ -1202,6 +1207,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/land/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
     vendor/xiaomi/land/proprietary/vendor/lib/libscalar.so:system/vendor/lib/libscalar.so \
     vendor/xiaomi/land/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
+    vendor/xiaomi/land/proprietary/vendor/lib/libscve.so:system/vendor/lib/libscve.so \
+    vendor/xiaomi/land/proprietary/vendor/lib/libscveTextRecoPostProcessing.so:system/vendor/lib/libscveTextRecoPostProcessing.so \
+    vendor/xiaomi/land/proprietary/vendor/lib/libscve_mv.so:system/vendor/lib/libscve_mv.so \
+    vendor/xiaomi/land/proprietary/vendor/lib/libscve_stub.so:system/vendor/lib/libscve_stub.so \
     vendor/xiaomi/land/proprietary/vendor/lib/libsd_sdk_display.so:system/vendor/lib/libsd_sdk_display.so \
     vendor/xiaomi/land/proprietary/vendor/lib/libsdm-color.so:system/vendor/lib/libsdm-color.so \
     vendor/xiaomi/land/proprietary/vendor/lib/libsdm-diag.so:system/vendor/lib/libsdm-diag.so \
@@ -1224,8 +1233,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/land/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
     vendor/xiaomi/land/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
     vendor/xiaomi/land/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
-    vendor/xiaomi/land/proprietary/vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so:system/vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so \
-    vendor/xiaomi/land/proprietary/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_skel.so:system/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_skel.so \
     vendor/xiaomi/land/proprietary/vendor/lib/rfsa/adsp/libapps_mem_heap.so:system/vendor/lib/rfsa/adsp/libapps_mem_heap.so \
     vendor/xiaomi/land/proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so:system/vendor/lib/rfsa/adsp/libdspCV_skel.so \
     vendor/xiaomi/land/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so:system/vendor/lib/rfsa/adsp/libfastcvadsp.so \
@@ -1325,6 +1332,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/land/proprietary/vendor/lib64/libaudioalsa.so:system/vendor/lib64/libaudioalsa.so \
     vendor/xiaomi/land/proprietary/vendor/lib64/libaudiodevarb.so:system/vendor/lib64/libaudiodevarb.so \
     vendor/xiaomi/land/proprietary/vendor/lib64/libbccQTI.so:system/vendor/lib64/libbccQTI.so \
+    vendor/xiaomi/land/proprietary/vendor/lib64/libbt-vendor.so:system/vendor/lib64/libbt-vendor.so \
     vendor/xiaomi/land/proprietary/vendor/lib64/libbtnv.so:system/vendor/lib64/libbtnv.so \
     vendor/xiaomi/land/proprietary/vendor/lib64/libc2d30-a3xx.so:system/vendor/lib64/libc2d30-a3xx.so \
     vendor/xiaomi/land/proprietary/vendor/lib64/libc2d30-a4xx.so:system/vendor/lib64/libc2d30-a4xx.so \
@@ -1377,6 +1385,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/land/proprietary/vendor/lib64/liblowi_wifihal_nl.so:system/vendor/lib64/liblowi_wifihal_nl.so \
     vendor/xiaomi/land/proprietary/vendor/lib64/liblqe.so:system/vendor/lib64/liblqe.so \
     vendor/xiaomi/land/proprietary/vendor/lib64/libmdmdetect.so:system/vendor/lib64/libmdmdetect.so \
+    vendor/xiaomi/land/proprietary/vendor/lib64/libmm-als.so:system/vendor/lib64/libmm-als.so \
     vendor/xiaomi/land/proprietary/vendor/lib64/libmm-color-convertor.so:system/vendor/lib64/libmm-color-convertor.so \
     vendor/xiaomi/land/proprietary/vendor/lib64/libmm-disp-apis.so:system/vendor/lib64/libmm-disp-apis.so \
     vendor/xiaomi/land/proprietary/vendor/lib64/libmm-hdcpmgr.so:system/vendor/lib64/libmm-hdcpmgr.so \
@@ -1451,6 +1460,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/land/proprietary/vendor/lib64/libxtwifi_ulp_adaptor.so:system/vendor/lib64/libxtwifi_ulp_adaptor.so \
     vendor/xiaomi/land/proprietary/vendor/lib64/sensor_calibrate.so:system/vendor/lib64/sensor_calibrate.so \
     vendor/xiaomi/land/proprietary/vendor/lib64/sensors.ssc.so:system/vendor/lib64/sensors.ssc.so \
+    vendor/xiaomi/land/proprietary/vendor/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
+    vendor/xiaomi/land/proprietary/vendor/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd \
     vendor/xiaomi/land/proprietary/vendor/qcril.db:system/vendor/qcril.db
 
 PRODUCT_PACKAGES += \
