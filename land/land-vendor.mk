@@ -47,7 +47,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/land/proprietary/bin/ssr_diag:system/bin/ssr_diag \
     vendor/xiaomi/land/proprietary/bin/tftp_server:system/bin/tftp_server \
     vendor/xiaomi/land/proprietary/bin/time_daemon:system/bin/time_daemon \
-    vendor/xiaomi/land/proprietary/bin/wcnss_filter:system/bin/wcnss_filter \
     vendor/xiaomi/land/proprietary/bin/wcnss_service:system/bin/wcnss_service \
     vendor/xiaomi/land/proprietary/bin/xtwifi-client:system/bin/xtwifi-client \
     vendor/xiaomi/land/proprietary/bin/xtwifi-inet-agent:system/bin/xtwifi-inet-agent \
@@ -1199,7 +1198,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/land/proprietary/vendor/lib/libqomx_jpegenc_pipe.so:system/vendor/lib/libqomx_jpegenc_pipe.so \
     vendor/xiaomi/land/proprietary/vendor/lib/libqti-at.so:system/vendor/lib/libqti-at.so \
     vendor/xiaomi/land/proprietary/vendor/lib/libqti-iop-client.so:system/vendor/lib/libqti-iop-client.so \
-    vendor/xiaomi/land/proprietary/vendor/lib/libqti-iop.so:system/vendor/lib/libqti-iop.so \
     vendor/xiaomi/land/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
     vendor/xiaomi/land/proprietary/vendor/lib/libqti-wl.so:system/vendor/lib/libqti-wl.so \
     vendor/xiaomi/land/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
