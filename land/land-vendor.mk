@@ -22,6 +22,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/land/proprietary/bin/cnss-daemon:system/bin/cnss-daemon \
     vendor/xiaomi/land/proprietary/bin/cnss_diag:system/bin/cnss_diag \
     vendor/xiaomi/land/proprietary/bin/dpmd:system/bin/dpmd \
+    vendor/xiaomi/land/proprietary/bin/dun-server:system/bin/dun-server \
     vendor/xiaomi/land/proprietary/bin/gx_fpcmd:system/bin/gx_fpcmd \
     vendor/xiaomi/land/proprietary/bin/gx_fpd:system/bin/gx_fpd \
     vendor/xiaomi/land/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
@@ -47,6 +48,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/land/proprietary/bin/ssr_diag:system/bin/ssr_diag \
     vendor/xiaomi/land/proprietary/bin/tftp_server:system/bin/tftp_server \
     vendor/xiaomi/land/proprietary/bin/time_daemon:system/bin/time_daemon \
+    vendor/xiaomi/land/proprietary/bin/wcnss_filter:system/bin/wcnss_filter \
     vendor/xiaomi/land/proprietary/bin/wcnss_service:system/bin/wcnss_service \
     vendor/xiaomi/land/proprietary/bin/xtwifi-client:system/bin/xtwifi-client \
     vendor/xiaomi/land/proprietary/bin/xtwifi-inet-agent:system/bin/xtwifi-inet-agent \
@@ -246,7 +248,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/land/proprietary/lib64/libfpservice.so:system/lib64/libfpservice.so \
     vendor/xiaomi/land/proprietary/lib64/libgnsspps.so:system/lib64/libgnsspps.so \
     vendor/xiaomi/land/proprietary/lib64/libvpplibrary.so:system/lib64/libvpplibrary.so \
-    vendor/xiaomi/land/proprietary/vendor/bin/mm-pp-daemon:system/vendor/bin/mm-pp-daemon \
     vendor/xiaomi/land/proprietary/vendor/bin/mm-pp-dpps:system/vendor/bin/mm-pp-dpps \
     vendor/xiaomi/land/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/xiaomi/land/proprietary/vendor/bin/qseeproxydaemon:system/vendor/bin/qseeproxydaemon \
@@ -1288,6 +1289,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/land/proprietary/vendor/lib64/lib-sec-disp.so:system/vendor/lib64/lib-sec-disp.so \
     vendor/xiaomi/land/proprietary/vendor/lib64/libAlacSwDec.so:system/vendor/lib64/libAlacSwDec.so \
     vendor/xiaomi/land/proprietary/vendor/lib64/libApeSwDec.so:system/vendor/lib64/libApeSwDec.so \
+    vendor/xiaomi/land/proprietary/vendor/lib64/libCommandSvc.so:system/vendor/lib64/libCommandSvc.so \
     vendor/xiaomi/land/proprietary/vendor/lib64/libC2D2.so:system/vendor/lib64/libC2D2.so \
     vendor/xiaomi/land/proprietary/vendor/lib64/libCB.so:system/vendor/lib64/libCB.so \
     vendor/xiaomi/land/proprietary/vendor/lib64/libDRPlugin.so:system/vendor/lib64/libDRPlugin.so \
@@ -1331,7 +1333,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/land/proprietary/vendor/lib64/libaudioalsa.so:system/vendor/lib64/libaudioalsa.so \
     vendor/xiaomi/land/proprietary/vendor/lib64/libaudiodevarb.so:system/vendor/lib64/libaudiodevarb.so \
     vendor/xiaomi/land/proprietary/vendor/lib64/libbccQTI.so:system/vendor/lib64/libbccQTI.so \
-    vendor/xiaomi/land/proprietary/vendor/lib64/libbt-vendor.so:system/vendor/lib64/libbt-vendor.so \
     vendor/xiaomi/land/proprietary/vendor/lib64/libbtnv.so:system/vendor/lib64/libbtnv.so \
     vendor/xiaomi/land/proprietary/vendor/lib64/libc2d30-a3xx.so:system/vendor/lib64/libc2d30-a3xx.so \
     vendor/xiaomi/land/proprietary/vendor/lib64/libc2d30-a4xx.so:system/vendor/lib64/libc2d30-a4xx.so \
@@ -1384,7 +1385,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/land/proprietary/vendor/lib64/liblowi_wifihal_nl.so:system/vendor/lib64/liblowi_wifihal_nl.so \
     vendor/xiaomi/land/proprietary/vendor/lib64/liblqe.so:system/vendor/lib64/liblqe.so \
     vendor/xiaomi/land/proprietary/vendor/lib64/libmdmdetect.so:system/vendor/lib64/libmdmdetect.so \
-    vendor/xiaomi/land/proprietary/vendor/lib64/libmm-als.so:system/vendor/lib64/libmm-als.so \
     vendor/xiaomi/land/proprietary/vendor/lib64/libmm-color-convertor.so:system/vendor/lib64/libmm-color-convertor.so \
     vendor/xiaomi/land/proprietary/vendor/lib64/libmm-disp-apis.so:system/vendor/lib64/libmm-disp-apis.so \
     vendor/xiaomi/land/proprietary/vendor/lib64/libmm-hdcpmgr.so:system/vendor/lib64/libmm-hdcpmgr.so \
