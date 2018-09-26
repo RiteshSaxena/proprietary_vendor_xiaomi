@@ -624,4 +624,5 @@ PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     PowerOffAlarm \
     TimeService \
-    ReferenceFeature
+    ReferenceFeature \
+    chargeonlymode
