@@ -94,6 +94,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sdm845-common/proprietary/lib/vendor.xiaomi.hardware.mlipay@1.1.so:system/lib/vendor.xiaomi.hardware.mlipay@1.1.so \
     vendor/xiaomi/sdm845-common/proprietary/lib/vendor.xiaomi.hardware.mtdservice@1.0.so:system/lib/vendor.xiaomi.hardware.mtdservice@1.0.so \
     vendor/xiaomi/sdm845-common/proprietary/lib/vendor.xiaomi.hardware.mtdservice@1.1.so:system/lib/vendor.xiaomi.hardware.mtdservice@1.1.so \
+    vendor/xiaomi/sdm845-common/proprietary/lib/vendor.xiaomi.hardware.mtdservice@1.2.so:system/lib/vendor.xiaomi.hardware.mtdservice@1.2.so \
     vendor/xiaomi/sdm845-common/proprietary/lib/vendor.xiaomi.hardware.tidaservice@1.0.so:system/lib/vendor.xiaomi.hardware.tidaservice@1.0.so \
     vendor/xiaomi/sdm845-common/proprietary/lib/vendor.xiaomi.hardware.tidaservice@1.1.so:system/lib/vendor.xiaomi.hardware.tidaservice@1.1.so \
     vendor/xiaomi/sdm845-common/proprietary/lib/vendor.xiaomi.hardware.vsimapp@1.0.so:system/lib/vendor.xiaomi.hardware.vsimapp@1.0.so \
@@ -137,6 +138,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sdm845-common/proprietary/lib64/vendor.xiaomi.hardware.mlipay@1.1.so:system/lib64/vendor.xiaomi.hardware.mlipay@1.1.so \
     vendor/xiaomi/sdm845-common/proprietary/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so:system/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so \
     vendor/xiaomi/sdm845-common/proprietary/lib64/vendor.xiaomi.hardware.mtdservice@1.1.so:system/lib64/vendor.xiaomi.hardware.mtdservice@1.1.so \
+    vendor/xiaomi/sdm845-common/proprietary/lib64/vendor.xiaomi.hardware.mtdservice@1.2.so:system/lib64/vendor.xiaomi.hardware.mtdservice@1.2.so \
     vendor/xiaomi/sdm845-common/proprietary/lib64/vendor.xiaomi.hardware.tidaservice@1.0.so:system/lib64/vendor.xiaomi.hardware.tidaservice@1.0.so \
     vendor/xiaomi/sdm845-common/proprietary/lib64/vendor.xiaomi.hardware.tidaservice@1.1.so:system/lib64/vendor.xiaomi.hardware.tidaservice@1.1.so \
     vendor/xiaomi/sdm845-common/proprietary/lib/soundfx/libvolumelistener.so:system/lib/soundfx/libvolumelistener.so \
