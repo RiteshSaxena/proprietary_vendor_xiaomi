@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<!--
+/* Copyright (c) 2017 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ */
+-->
+
+<AppCatalog>
+    <ResolutionOverrideApps>
+    </ResolutionOverrideApps>
+
+    <GameTriggerApps>
+    </GameTriggerApps>
+
+    <GameColocateApps>
+    </GameColocateApps>
+
+    <HWAccelApps>
+        <AppAttributes PackageName="com.tencent.mobileqq" />
+        <AppAttributes PackageName="com.taobao.taobao" />
+        <AppAttributes PackageName="com.youdao.dict" />
+    </HWAccelApps>
+</AppCatalog>
