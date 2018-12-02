@@ -498,9 +498,9 @@ PRODUCT_PACKAGES += \
     libantradio \
     libgpustats \
     libsdm-disp-vndapis \
-    ims \
     uceShimService \
     CNEService \
+    ims \
     qcrilmsgtunnel \
     QtiTelephonyService \
     datastatusnotification \
