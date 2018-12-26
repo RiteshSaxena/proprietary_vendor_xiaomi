@@ -1,4 +1,4 @@
-# Copyright (C) 2018 The MoKee Open Source Project
+# Copyright (C) 2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -210,6 +210,18 @@ LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := WfdService
+LOCAL_MODULE_OWNER := xiaomi
+LOCAL_SRC_FILES := proprietary/priv-app/WfdService/WfdService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := dpmserviceapp
 LOCAL_MODULE_OWNER := xiaomi
 LOCAL_SRC_FILES := proprietary/priv-app/dpmserviceapp/dpmserviceapp.apk
@@ -291,6 +303,16 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_VENDOR_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := WfdCommon
+LOCAL_MODULE_OWNER := xiaomi
+LOCAL_SRC_FILES := proprietary/framework/WfdCommon.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
