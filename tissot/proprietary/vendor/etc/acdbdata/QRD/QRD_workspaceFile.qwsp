@@ -1,4 +1,4 @@
-﻿<WorkSpace_Data WSVersID="Badger_3">
+﻿<WorkSpace_Data WSVersID="Badger_3" ToolPlugin="QACT" Version="D2A-Forte_acdb_18.11.29">
   <ACDBFile_Paths>
     <ACDBFile_Paths path="QRD_adsp_avs_config.acdb" />
     <ACDBFile_Paths path="QRD_Bluetooth_cal.acdb" />
@@ -120,9 +120,6 @@
         <TOPOLOGY name="VOICE_TX_SM_FVSAM" ID="0x1000FFFB" type="TX" NewAdded="true">
           <Block name="TX_VOICE_HPF" dataView_ID="0x000000BB" ID="0x00010F11" type="TX" />
           <Block name="TX_VOICE_MIC_GAIN" dataView_ID="0x00000018" ID="0x00010EF7" type="TX" />
-          <Block name="TX_VOICE_SLOPE_FILTER" dataView_ID="0x00000019" ID="0x00010EFE" type="TX" />
-          <Block name="TX_VOICE_ELLIPTICAL_FILTER" dataView_ID="0x00000019" ID="0x00010EFD" type="TX" />
-          <Block name="TX_VOICE_ENC_GAIN" dataView_ID="0x00000018" ID="0x00010EF8" type="TX" />
           <Block name="TX_VOICE_IIR_MIC1" dataView_ID="0x0000004E" ID="0x00010EF0" type="TX" />
           <Block name="TX_VOICE_FVSAM" ID="0x00010F50" type="TX" NewAdded="true" dataView_ID="0xFFFF0002" />
           <Block name="TX_VOICE_FIR" dataView_ID="0x00000021" ID="0x00010EE9" type="TX" dynamicModule="true" />
@@ -134,9 +131,6 @@
         <TOPOLOGY name="VOICE_TX_DM_FVSAM" ID="0x1000FFFC" type="TX" NewAdded="true">
           <Block name="TX_VOICE_HPF" dataView_ID="0x000000BB" ID="0x00010F11" type="TX" />
           <Block name="TX_VOICE_MIC_GAIN" dataView_ID="0x00000018" ID="0x00010EF7" type="TX" />
-          <Block name="TX_VOICE_SLOPE_FILTER" dataView_ID="0x00000019" ID="0x00010EFE" type="TX" />
-          <Block name="TX_VOICE_ELLIPTICAL_FILTER" dataView_ID="0x00000019" ID="0x00010EFD" type="TX" />
-          <Block name="TX_VOICE_ENC_GAIN" dataView_ID="0x00000018" ID="0x00010EF8" type="TX" />
           <Block name="TX_VOICE_IIR_MIC1" dataView_ID="0x0000004E" ID="0x00010EF0" type="TX" />
           <Block name="TX_VOICE_IIR_MIC2" dataView_ID="0x0000004E" ID="0x00010EF1" type="TX" />
           <Block name="TX_VOICE_FVSAM" ID="0x00010F50" type="TX" NewAdded="true" dataView_ID="0xFFFF0002" />
@@ -149,9 +143,6 @@
         <TOPOLOGY name="VOICE_TX_TM_FVSAM" ID="0x1000FFFD" type="TX" NewAdded="true">
           <Block name="TX_VOICE_HPF" dataView_ID="0x000000BB" ID="0x00010F11" type="TX" />
           <Block name="TX_VOICE_MIC_GAIN" dataView_ID="0x00000018" ID="0x00010EF7" type="TX" />
-          <Block name="TX_VOICE_SLOPE_FILTER" dataView_ID="0x00000019" ID="0x00010EFE" type="TX" />
-          <Block name="TX_VOICE_ELLIPTICAL_FILTER" dataView_ID="0x00000019" ID="0x00010EFD" type="TX" />
-          <Block name="TX_VOICE_ENC_GAIN" dataView_ID="0x00000018" ID="0x00010EF8" type="TX" />
           <Block name="TX_VOICE_IIR_MIC1" dataView_ID="0x0000004E" ID="0x00010EF0" type="TX" />
           <Block name="TX_VOICE_IIR_MIC2" dataView_ID="0x0000004E" ID="0x00010EF1" type="TX" />
           <Block name="TX_VOICE_FVSAM" ID="0x00010F50" type="TX" NewAdded="true" dataView_ID="0xFFFF0002" />
@@ -170,7 +161,6 @@
           <Block name="RX_VOICE_MBDRC" dataView_ID="0x00000007" ID="0x00010EE6" type="RX" />
           <Block name="RX_VOICE_IIR" dataView_ID="0x0000004E" ID="0x00010EE8" type="RX" />
           <Block name="RX_VOICE_FIR" dataView_ID="0x00000021" ID="0x00010EEA" type="RX" />
-          <Block name="RX_VOICE_ECRX" dataView_ID="0x0000000B" ID="0x00010EED" type="RX" />
           <Block name="RX_VOICE_DRC" dataView_ID="0x0000001E" ID="0x00010EF2" type="RX" />
           <Block name="RX_VOICE_VOL" dataView_ID="0x00000054" ID="0x00010EF5" type="RX" volumeModule="true" gain_dependant="Yes" />
           <Block name="RX_VOICE_SPKR_GAIN" dataView_ID="0x00000018" ID="0x00010EF9" type="RX" />
@@ -241,50 +231,6 @@
         <Block name="AUDIO_HIGH_THD_RESAMPLER" ID="0x00010719" />
         <Block name="AUDIOSPHERE" ID="0x00010916" />
       </TOPOLOGY>
-      <TOPOLOGY name="VOICE_TX_DM_FVSAM" ID="0x1000FFFC" type="TX" NewAdded="true">
-        <Block name="TX_VOICE_IIR" dataView_ID="0x0000004E" ID="0x00010EE7" type="TX" />
-        <Block name="TX_VOICE_FIR" dataView_ID="0x00000021" ID="0x00010EE9" type="TX" />
-        <Block name="TX_VOICE_IIR_MIC1" dataView_ID="0x0000004E" ID="0x00010EF0" type="TX" />
-        <Block name="TX_VOICE_IIR_MIC2" dataView_ID="0x0000004E" ID="0x00010EF1" type="TX" />
-        <Block name="TX_VOICE_DRC" dataView_ID="0x0000001E" ID="0x00010EF3" type="TX" />
-        <Block name="TX_VOICE_VOL" dataView_ID="0x0000000F" ID="0x00010EF4" type="TX" />
-        <Block name="TX_VOICE_MIC_GAIN" dataView_ID="0x00000018" ID="0x00010EF7" type="TX" />
-        <Block name="TX_VOICE_ENC_GAIN" dataView_ID="0x00000018" ID="0x00010EF8" type="TX" />
-        <Block name="TX_VOICE_ELLIPTICAL_FILTER" dataView_ID="0x00000019" ID="0x00010EFD" type="TX" />
-        <Block name="TX_VOICE_SLOPE_FILTER" dataView_ID="0x00000019" ID="0x00010EFE" type="TX" />
-        <Block name="TX_VOICE_AIG" dataView_ID="0x0000000E" ID="0x00010F00" type="TX" />
-        <Block name="TX_VOICE_HPF" dataView_ID="0x000000BB" ID="0x00010F11" type="TX" />
-        <Block name="TX_VOICE_FVSAM" ID="0x00010F50" type="TX" NewAdded="true" dataView_ID="0xFFFF0002" />
-      </TOPOLOGY>
-      <TOPOLOGY name="VOICE_TX_TM_FVSAM" ID="0x1000FFFD" type="TX" NewAdded="true">
-        <Block name="TX_VOICE_IIR" dataView_ID="0x0000004E" ID="0x00010EE7" type="TX" />
-        <Block name="TX_VOICE_FIR" dataView_ID="0x00000021" ID="0x00010EE9" type="TX" />
-        <Block name="TX_VOICE_IIR_MIC1" dataView_ID="0x0000004E" ID="0x00010EF0" type="TX" />
-        <Block name="TX_VOICE_IIR_MIC2" dataView_ID="0x0000004E" ID="0x00010EF1" type="TX" />
-        <Block name="TX_VOICE_DRC" dataView_ID="0x0000001E" ID="0x00010EF3" type="TX" />
-        <Block name="TX_VOICE_VOL" dataView_ID="0x0000000F" ID="0x00010EF4" type="TX" />
-        <Block name="TX_VOICE_MIC_GAIN" dataView_ID="0x00000018" ID="0x00010EF7" type="TX" />
-        <Block name="TX_VOICE_ENC_GAIN" dataView_ID="0x00000018" ID="0x00010EF8" type="TX" />
-        <Block name="TX_VOICE_ELLIPTICAL_FILTER" dataView_ID="0x00000019" ID="0x00010EFD" type="TX" />
-        <Block name="TX_VOICE_SLOPE_FILTER" dataView_ID="0x00000019" ID="0x00010EFE" type="TX" />
-        <Block name="TX_VOICE_AIG" dataView_ID="0x0000000E" ID="0x00010F00" type="TX" />
-        <Block name="TX_VOICE_HPF" dataView_ID="0x000000BB" ID="0x00010F11" type="TX" />
-        <Block name="TX_VOICE_FVSAM" ID="0x00010F50" type="TX" NewAdded="true" dataView_ID="0xFFFF0002" />
-      </TOPOLOGY>
-      <TOPOLOGY name="VOICE_TX_SM_FVSAM" ID="0x1000FFFB" type="TX" NewAdded="true">
-        <Block name="TX_VOICE_IIR" dataView_ID="0x0000004E" ID="0x00010EE7" type="TX" />
-        <Block name="TX_VOICE_FIR" dataView_ID="0x00000021" ID="0x00010EE9" type="TX" />
-        <Block name="TX_VOICE_IIR_MIC1" dataView_ID="0x0000004E" ID="0x00010EF0" type="TX" />
-        <Block name="TX_VOICE_DRC" dataView_ID="0x0000001E" ID="0x00010EF3" type="TX" />
-        <Block name="TX_VOICE_VOL" dataView_ID="0x0000000F" ID="0x00010EF4" type="TX" />
-        <Block name="TX_VOICE_MIC_GAIN" dataView_ID="0x00000018" ID="0x00010EF7" type="TX" />
-        <Block name="TX_VOICE_ENC_GAIN" dataView_ID="0x00000018" ID="0x00010EF8" type="TX" />
-        <Block name="TX_VOICE_ELLIPTICAL_FILTER" dataView_ID="0x00000019" ID="0x00010EFD" type="TX" />
-        <Block name="TX_VOICE_SLOPE_FILTER" dataView_ID="0x00000019" ID="0x00010EFE" type="TX" />
-        <Block name="TX_VOICE_AIG" dataView_ID="0x0000000E" ID="0x00010F00" type="TX" />
-        <Block name="TX_VOICE_HPF" dataView_ID="0x000000BB" ID="0x00010F11" type="TX" />
-        <Block name="TX_VOICE_FVSAM" ID="0x00010F50" type="TX" NewAdded="true" dataView_ID="0xFFFF0002" />
-      </TOPOLOGY>
       <TOPOLOGY name="AUDIO_TX_SM_FVSAM" ID="0x1000FFF1" type="TX" NewAdded="true">
         <Block name="AUDIO_MBDRC" dataView_ID="0x00000012" ID="0x00010C06" type="BOTH" />
         <Block name="AUDIO_MIC_GAIN" dataView_ID="0x0000001B" ID="0x00010C35" type="TX" />
@@ -335,13 +281,53 @@
         <Block name="AUDIO_MIC_GAIN" dataView_ID="0x0000001B" ID="0x00010C35" type="TX" />
         <Block name="AUDIO_FVSAM_TX_SWB" ID="0x00010F56" type="TX" NewAdded="true" dataView_ID="0xFFFF0007" />
       </TOPOLOGY>
+      <TOPOLOGY name="TDIRAC_IPOWERSOUND" ID="0x10012D00" type="RX" NewAdded="true">
+        <Block name="MDIRAC_IPOWERSOUND" ID="0x00012D00" type="RX" NewAdded="true" dataView_ID="0xFFFF000C" />
+      </TOPOLOGY>
+      <TOPOLOGY name="TDIRAC_EHEADSET" ID="0x10012D01" type="RX" NewAdded="true">
+        <Block name="MDIRAC_EHEADSET" ID="0x00012D01" type="RX" NewAdded="true" dataView_ID="0xFFFF000B" />
+      </TOPOLOGY>
+      <TOPOLOGY name="VOICE_TX_DM_FVSAM" ID="0x1000FFFC" type="TX" NewAdded="true">
+        <Block name="TX_VOICE_IIR" dataView_ID="0x0000004E" ID="0x00010EE7" type="TX" />
+        <Block name="TX_VOICE_FIR" dataView_ID="0x00000021" ID="0x00010EE9" type="TX" />
+        <Block name="TX_VOICE_IIR_MIC1" dataView_ID="0x0000004E" ID="0x00010EF0" type="TX" />
+        <Block name="TX_VOICE_IIR_MIC2" dataView_ID="0x0000004E" ID="0x00010EF1" type="TX" />
+        <Block name="TX_VOICE_DRC" dataView_ID="0x0000001E" ID="0x00010EF3" type="TX" />
+        <Block name="TX_VOICE_VOL" dataView_ID="0x0000000F" ID="0x00010EF4" type="TX" />
+        <Block name="TX_VOICE_MIC_GAIN" dataView_ID="0x00000018" ID="0x00010EF7" type="TX" />
+        <Block name="TX_VOICE_AIG" dataView_ID="0x0000000E" ID="0x00010F00" type="TX" />
+        <Block name="TX_VOICE_HPF" dataView_ID="0x000000BB" ID="0x00010F11" type="TX" />
+        <Block name="TX_VOICE_FVSAM" ID="0x00010F50" type="TX" NewAdded="true" dataView_ID="0xFFFF0002" />
+      </TOPOLOGY>
+      <TOPOLOGY name="VOICE_TX_TM_FVSAM" ID="0x1000FFFD" type="TX" NewAdded="true">
+        <Block name="TX_VOICE_IIR" dataView_ID="0x0000004E" ID="0x00010EE7" type="TX" />
+        <Block name="TX_VOICE_FIR" dataView_ID="0x00000021" ID="0x00010EE9" type="TX" />
+        <Block name="TX_VOICE_IIR_MIC1" dataView_ID="0x0000004E" ID="0x00010EF0" type="TX" />
+        <Block name="TX_VOICE_IIR_MIC2" dataView_ID="0x0000004E" ID="0x00010EF1" type="TX" />
+        <Block name="TX_VOICE_DRC" dataView_ID="0x0000001E" ID="0x00010EF3" type="TX" />
+        <Block name="TX_VOICE_VOL" dataView_ID="0x0000000F" ID="0x00010EF4" type="TX" />
+        <Block name="TX_VOICE_MIC_GAIN" dataView_ID="0x00000018" ID="0x00010EF7" type="TX" />
+        <Block name="TX_VOICE_AIG" dataView_ID="0x0000000E" ID="0x00010F00" type="TX" />
+        <Block name="TX_VOICE_HPF" dataView_ID="0x000000BB" ID="0x00010F11" type="TX" />
+        <Block name="TX_VOICE_FVSAM" ID="0x00010F50" type="TX" NewAdded="true" dataView_ID="0xFFFF0002" />
+      </TOPOLOGY>
+      <TOPOLOGY name="VOICE_TX_SM_FVSAM" ID="0x1000FFFB" type="TX" NewAdded="true">
+        <Block name="TX_VOICE_IIR" dataView_ID="0x0000004E" ID="0x00010EE7" type="TX" />
+        <Block name="TX_VOICE_FIR" dataView_ID="0x00000021" ID="0x00010EE9" type="TX" />
+        <Block name="TX_VOICE_IIR_MIC1" dataView_ID="0x0000004E" ID="0x00010EF0" type="TX" />
+        <Block name="TX_VOICE_DRC" dataView_ID="0x0000001E" ID="0x00010EF3" type="TX" />
+        <Block name="TX_VOICE_VOL" dataView_ID="0x0000000F" ID="0x00010EF4" type="TX" />
+        <Block name="TX_VOICE_MIC_GAIN" dataView_ID="0x00000018" ID="0x00010EF7" type="TX" />
+        <Block name="TX_VOICE_AIG" dataView_ID="0x0000000E" ID="0x00010F00" type="TX" />
+        <Block name="TX_VOICE_HPF" dataView_ID="0x000000BB" ID="0x00010F11" type="TX" />
+        <Block name="TX_VOICE_FVSAM" ID="0x00010F50" type="TX" NewAdded="true" dataView_ID="0xFFFF0002" />
+      </TOPOLOGY>
       <TOPOLOGY name="VOICE_RX_FVSAM" ID="0x1000FFFE" type="RX" NewAdded="true">
         <Block name="RX_VOICE_AVC_RVE" dataView_ID="0x000000AC" ID="0x00010EE4" type="RX" />
         <Block name="RX_VOICE_PBE" dataView_ID="0x00000006" ID="0x00010EE5" type="RX" />
         <Block name="RX_VOICE_MBDRC" dataView_ID="0x00000007" ID="0x00010EE6" type="RX" />
         <Block name="RX_VOICE_IIR" dataView_ID="0x0000004E" ID="0x00010EE8" type="RX" />
         <Block name="RX_VOICE_FIR" dataView_ID="0x00000021" ID="0x00010EEA" type="RX" />
-        <Block name="RX_VOICE_ECRX" dataView_ID="0x0000000B" ID="0x00010EED" type="RX" />
         <Block name="RX_VOICE_DRC" dataView_ID="0x0000001E" ID="0x00010EF2" type="RX" />
         <Block name="RX_VOICE_VOL" dataView_ID="0x00000054" ID="0x00010EF5" type="RX" volumeModule="true" />
         <Block name="RX_VOICE_SPKR_GAIN" dataView_ID="0x00000018" ID="0x00010EF9" type="RX" />
@@ -350,12 +336,6 @@
         <Block name="RX_VOICE_HPF" dataView_ID="0x000000BB" ID="0x00010F12" type="RX" />
         <Block name="RX_GAIN" dataView_ID="0x000000B9" ID="0x00010F20" type="RX" />
         <Block name="RX_VOICE_FVSAM" ID="0x00010F51" type="RX" NewAdded="true" dataView_ID="0xFFFF0001" />
-      </TOPOLOGY>
-      <TOPOLOGY name="TDIRAC_IPOWERSOUND" ID="0x10012D00" type="RX" NewAdded="true">
-        <Block name="MDIRAC_IPOWERSOUND" ID="0x00012D00" type="RX" NewAdded="true" dataView_ID="0xFFFF000C" />
-      </TOPOLOGY>
-      <TOPOLOGY name="TDIRAC_EHEADSET" ID="0x10012D01" type="RX" NewAdded="true">
-        <Block name="MDIRAC_EHEADSET" ID="0x00012D01" type="RX" NewAdded="true" dataView_ID="0xFFFF000B" />
       </TOPOLOGY>
     </TOPOLOGY_LIST>
     <BLOCK_LIST>
