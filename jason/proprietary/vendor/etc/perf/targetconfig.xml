@@ -86,4 +86,18 @@
 
     </Config3>
 
+    <Config4>
+         <TargetInfo
+             Target="sdm455"
+             NumClusters="2"
+             TotalNumCores="8"
+             SocIds="385"
+             SynCore="1"
+             MinCoreOnline="0" />
+
+         <ClustersInfo Id="0" NumCores="4" Type="big" />
+         <ClustersInfo Id="1" NumCores="4" Type="little" />
+
+    </Config4>
+
 </TargetConfig>
