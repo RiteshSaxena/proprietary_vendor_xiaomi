@@ -1,4 +1,4 @@
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2018-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,12 +16,23 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter beryllium dipper polaris ursa,$(TARGET_DEVICE)),)
+ifneq ($(filter beryllium dipper equuleus perseus polaris ursa,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := QtiTelephonyService
 LOCAL_MODULE_OWNER := xiaomi
 LOCAL_SRC_FILES := proprietary/app/QtiTelephonyService/QtiTelephonyService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := SoterService
+LOCAL_MODULE_OWNER := xiaomi
+LOCAL_SRC_FILES := proprietary/app/SoterService/SoterService.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
