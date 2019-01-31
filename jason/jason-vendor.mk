@@ -59,10 +59,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/jason/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/xiaomi/jason/proprietary/framework/uimlpalibrary.jar:system/framework/uimlpalibrary.jar \
     vendor/xiaomi/jason/proprietary/lib/libdiag_system.so:system/lib/libdiag_system.so \
-    vendor/xiaomi/jason/proprietary/vendor/lib/libicuuc-v27.so:$(TARGET_COPY_OUT_VENDOR)/lib/libicuuc-v27.so \
-    vendor/xiaomi/jason/proprietary/vendor/lib/libminikin-v27.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminikin-v27.so \
     vendor/xiaomi/jason/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
-    vendor/xiaomi/jason/proprietary/vendor/lib/libskia.so:$(TARGET_COPY_OUT_VENDOR)/lib/libskia.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libtrueportrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtrueportrait.so \
     vendor/xiaomi/jason/proprietary/lib64/com.qualcomm.qti.ant@1.0.so:system/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/xiaomi/jason/proprietary/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/lib64/com.qualcomm.qti.dpm.api@1.0.so \
@@ -211,16 +208,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/jason/proprietary/vendor/lib/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_adreno.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_esx.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/hw/activity_recognition.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/activity_recognition.sdm660.so \
-    vendor/xiaomi/jason/proprietary/vendor/lib/hw/camera.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.sdm660.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/hw/gatekeeper.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gatekeeper.sdm660.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/hw/keystore.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/keystore.sdm660.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/hw/sound_trigger.primary.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.sdm660.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/hw/vulkan.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.sdm660.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libC2D2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libC2D2.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCB.so \
-    vendor/xiaomi/jason/proprietary/vendor/lib/libFaceGrade.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFaceGrade.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libI420colorconvert.so:$(TARGET_COPY_OUT_VENDOR)/lib/libI420colorconvert.so \
-    vendor/xiaomi/jason/proprietary/vendor/lib/libMiCameraHal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMiCameraHal.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libOmxAacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAacDec.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libOmxEvrcDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxEvrcDec.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libOmxQcelp13Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxQcelp13Dec.so \
@@ -229,11 +223,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/jason/proprietary/vendor/lib/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQSEEComAPI.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libRSDriver_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/libRSDriver_adreno.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libSonyIMX386PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSonyIMX386PdafLibrary.so \
-    vendor/xiaomi/jason/proprietary/vendor/lib/libStereoRectification.so:$(TARGET_COPY_OUT_VENDOR)/lib/libStereoRectification.so \
-    vendor/xiaomi/jason/proprietary/vendor/lib/libVDClearShot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libVDClearShot.so \
-    vendor/xiaomi/jason/proprietary/vendor/lib/libXMFD_AgeGender.so:$(TARGET_COPY_OUT_VENDOR)/lib/libXMFD_AgeGender.so \
-    vendor/xiaomi/jason/proprietary/vendor/lib/lib_lowlight.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_lowlight.so \
-    vendor/xiaomi/jason/proprietary/vendor/lib/lib_lowlight_dxo.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_lowlight_dxo.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdb-fts.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbloader.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbrtac.so \
@@ -249,8 +238,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/jason/proprietary/vendor/lib/libadsp_hvx_callback_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsp_hvx_callback_skel.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libadsp_hvx_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsp_hvx_stub.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsprpc.so \
-    vendor/xiaomi/jason/proprietary/vendor/lib/libarcsoft_beauty_shot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_beauty_shot.so \
-    vendor/xiaomi/jason/proprietary/vendor/lib/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_beautyshot.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libarcsoft_dualcam_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_dualcam_optical_zoom.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libarcsoft_dualcam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_dualcam_optical_zoom_control.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libarcsoft_dualcam_refocus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_dualcam_refocus.so \
@@ -426,9 +413,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/jason/proprietary/vendor/lib/libllvm-glnext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-glnext.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libllvm-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-qcom.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmdetect.so \
-    vendor/xiaomi/jason/proprietary/vendor/lib/libmibokeh_660.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmibokeh_660.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-color-convertor.so \
-    vendor/xiaomi/jason/proprietary/vendor/lib/libmm-qcamera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-qcamera.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libmmcamera2_c2d_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_c2d_module.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libmmcamera2_cpp_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_cpp_module.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libmmcamera2_frame_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_frame_algorithm.so \
@@ -462,7 +447,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/jason/proprietary/vendor/lib/libmmcamera_hvx_grid_sum.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_hvx_grid_sum.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libmmcamera_imglib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imglib.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libmmcamera_imglib_faceproc_adspstub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imglib_faceproc_adspstub.so \
-    vendor/xiaomi/jason/proprietary/vendor/lib/libmmcamera_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_interface.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libmmcamera_isp_abf48.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_abf48.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libmmcamera_isp_aec_bg_stats47.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_aec_bg_stats47.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libmmcamera_isp_bf_stats47.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_bf_stats47.so \
@@ -533,7 +517,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/jason/proprietary/vendor/lib/libmmcamera_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_tuning.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libmmcamera_tuning_lookup.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_tuning_lookup.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libmmjpeg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg.so \
-    vendor/xiaomi/jason/proprietary/vendor/lib/libmmjpeg_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg_interface.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libmmosal_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmosal_proprietary.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libmmqjpeg_codec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmqjpeg_codec.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libmmqjpegdma.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmqjpegdma.so \
@@ -541,14 +524,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/jason/proprietary/vendor/lib/libmmsw_math.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmsw_math.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libmmsw_opencl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmsw_opencl.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libmmsw_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmsw_platform.so \
-    vendor/xiaomi/jason/proprietary/vendor/lib/libmorpho_easy_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmorpho_easy_hdr.so \
-    vendor/xiaomi/jason/proprietary/vendor/lib/libmorpho_hdr_checker.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmorpho_hdr_checker.so \
-    vendor/xiaomi/jason/proprietary/vendor/lib/libmorpho_video_refiner.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmorpho_video_refiner.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmpbase.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libnwa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnwa.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libois_jason_bu63169_ofilm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libois_jason_bu63169_ofilm.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libois_jason_bu63169_semco.so:$(TARGET_COPY_OUT_VENDOR)/lib/libois_jason_bu63169_semco.so \
-    vendor/xiaomi/jason/proprietary/vendor/lib/liboisgyro.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboisgyro.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/liboptizoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboptizoom.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfgluelayer.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcci_legacy.so \
@@ -562,7 +541,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/jason/proprietary/vendor/lib/libqmi_csi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_csi.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_encdec.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmiservices.so \
-    vendor/xiaomi/jason/proprietary/vendor/lib/libqomx_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_core.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libqomx_jpegdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_jpegdec.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libqomx_jpegenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_jpegenc.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libqomx_jpegenc_pipe.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_jpegenc_pipe.so \
@@ -587,14 +565,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/jason/proprietary/vendor/lib/libsmwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmwrapper.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libsse.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsse.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml2_1.so \
-    vendor/xiaomi/jason/proprietary/vendor/lib/libts_detected_face_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libts_detected_face_hal.so \
-    vendor/xiaomi/jason/proprietary/vendor/lib/libts_face_beautify_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libts_face_beautify_hal.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libubifocus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libubifocus.so \
-    vendor/xiaomi/jason/proprietary/vendor/lib/libvideorefiner.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideorefiner.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpphvx.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpplibrary.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/libvqzip.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvqzip.so \
-    vendor/xiaomi/jason/proprietary/vendor/lib/mibokeh_660_opencl.bin:$(TARGET_COPY_OUT_VENDOR)/lib/mibokeh_660_opencl.bin \
     vendor/xiaomi/jason/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_Classic.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_HD.so \
     vendor/xiaomi/jason/proprietary/vendor/lib/rfsa/adsp/dirac_resource.dar:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/dirac_resource.dar \
@@ -815,6 +789,8 @@ PRODUCT_PACKAGES += \
     libantradio \
     libgpustats \
     libthermalclient \
+    libts_detected_face_hal \
+    libts_face_beautify_hal \
     QtiTelephonyService \
     datastatusnotification \
     embms \
