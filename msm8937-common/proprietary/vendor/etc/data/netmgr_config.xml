@@ -636,7 +636,7 @@
          <data type="string"> rmnet_data7 </data>
       </list>
 
-      <data name="iwlan_enable" type="int"> 1 </data>
+      <data name="iwlan_enable" type="int"> 0 </data>
       <data name="rev_control_ports_len" type="int"> 9 </data>
       <list name="rev_control_ports">
          <data type="string"> r_rmnet_data0 </data>
