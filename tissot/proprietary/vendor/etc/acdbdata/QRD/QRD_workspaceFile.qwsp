@@ -1,4 +1,4 @@
-﻿<WorkSpace_Data WSVersID="Badger_3" ToolPlugin="QACT" Version="D2A-Forte_acdb_18.11.29">
+﻿<WorkSpace_Data WSVersID="Badger_3" ToolPlugin="QACT">
   <ACDBFile_Paths>
     <ACDBFile_Paths path="QRD_adsp_avs_config.acdb" />
     <ACDBFile_Paths path="QRD_Bluetooth_cal.acdb" />
@@ -119,9 +119,9 @@
       <AREA type="TX" name="VOICE_COPP_TX">
         <TOPOLOGY name="VOICE_TX_SM_FVSAM" ID="0x1000FFFB" type="TX" NewAdded="true">
           <Block name="TX_VOICE_HPF" dataView_ID="0x000000BB" ID="0x00010F11" type="TX" />
-          <Block name="TX_VOICE_MIC_GAIN" dataView_ID="0x00000018" ID="0x00010EF7" type="TX" />
           <Block name="TX_VOICE_IIR_MIC1" dataView_ID="0x0000004E" ID="0x00010EF0" type="TX" />
           <Block name="TX_VOICE_FVSAM" ID="0x00010F50" type="TX" NewAdded="true" dataView_ID="0xFFFF0002" />
+          <Block name="TX_VOICE_MIC_GAIN" dataView_ID="0x00000018" ID="0x00010EF7" type="TX" />
           <Block name="TX_VOICE_FIR" dataView_ID="0x00000021" ID="0x00010EE9" type="TX" dynamicModule="true" />
           <Block name="TX_VOICE_IIR" dataView_ID="0x0000004E" ID="0x00010EE7" type="TX" dynamicModule="true" />
           <Block name="TX_VOICE_AIG" dataView_ID="0x0000000E" ID="0x00010F00" type="TX" />
@@ -130,10 +130,10 @@
         </TOPOLOGY>
         <TOPOLOGY name="VOICE_TX_DM_FVSAM" ID="0x1000FFFC" type="TX" NewAdded="true">
           <Block name="TX_VOICE_HPF" dataView_ID="0x000000BB" ID="0x00010F11" type="TX" />
-          <Block name="TX_VOICE_MIC_GAIN" dataView_ID="0x00000018" ID="0x00010EF7" type="TX" />
           <Block name="TX_VOICE_IIR_MIC1" dataView_ID="0x0000004E" ID="0x00010EF0" type="TX" />
           <Block name="TX_VOICE_IIR_MIC2" dataView_ID="0x0000004E" ID="0x00010EF1" type="TX" />
           <Block name="TX_VOICE_FVSAM" ID="0x00010F50" type="TX" NewAdded="true" dataView_ID="0xFFFF0002" />
+          <Block name="TX_VOICE_MIC_GAIN" dataView_ID="0x00000018" ID="0x00010EF7" type="TX" />
           <Block name="TX_VOICE_FIR" dataView_ID="0x00000021" ID="0x00010EE9" type="TX" dynamicModule="true" />
           <Block name="TX_VOICE_IIR" dataView_ID="0x0000004E" ID="0x00010EE7" type="TX" dynamicModule="true" />
           <Block name="TX_VOICE_AIG" dataView_ID="0x0000000E" ID="0x00010F00" type="TX" />
@@ -142,10 +142,10 @@
         </TOPOLOGY>
         <TOPOLOGY name="VOICE_TX_TM_FVSAM" ID="0x1000FFFD" type="TX" NewAdded="true">
           <Block name="TX_VOICE_HPF" dataView_ID="0x000000BB" ID="0x00010F11" type="TX" />
-          <Block name="TX_VOICE_MIC_GAIN" dataView_ID="0x00000018" ID="0x00010EF7" type="TX" />
           <Block name="TX_VOICE_IIR_MIC1" dataView_ID="0x0000004E" ID="0x00010EF0" type="TX" />
           <Block name="TX_VOICE_IIR_MIC2" dataView_ID="0x0000004E" ID="0x00010EF1" type="TX" />
           <Block name="TX_VOICE_FVSAM" ID="0x00010F50" type="TX" NewAdded="true" dataView_ID="0xFFFF0002" />
+          <Block name="TX_VOICE_MIC_GAIN" dataView_ID="0x00000018" ID="0x00010EF7" type="TX" />
           <Block name="TX_VOICE_FIR" dataView_ID="0x00000021" ID="0x00010EE9" type="TX" dynamicModule="true" />
           <Block name="TX_VOICE_IIR" dataView_ID="0x0000004E" ID="0x00010EE7" type="TX" dynamicModule="true" />
           <Block name="TX_VOICE_AIG" dataView_ID="0x0000000E" ID="0x00010F00" type="TX" />
