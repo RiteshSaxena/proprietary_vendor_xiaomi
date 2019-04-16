@@ -89,4 +89,10 @@ INSERT OR REPLACE INTO qcril_emergency_source_voice_table VALUES('425','102','',
 --MIUI-1322775
 DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '230';
 
+-- begin removed in PLATINA-2252 NCell
+DELETE FROM qcril_emergency_source_mcc_table where MCC = '429' AND NUMBER = '100';
+DELETE FROM qcril_emergency_source_mcc_table where MCC = '429' AND NUMBER = '101';
+DELETE FROM qcril_emergency_source_mcc_table where MCC = '429' AND NUMBER = '102';
+-- end
+
 COMMIT TRANSACTION;

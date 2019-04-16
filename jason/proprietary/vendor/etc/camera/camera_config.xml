@@ -212,8 +212,8 @@ LensInfo : Information of the lens present in the module.
       <FocalLength>3.519</FocalLength>
       <FNumber>2.0</FNumber>
       <TotalFocusDistance>0.4</TotalFocusDistance>
-      <HorizontalViewAngle>50.3</HorizontalViewAngle>
-      <VerticalViewAngle>64.5</VerticalViewAngle>
+      <HorizontalViewAngle>64.5</HorizontalViewAngle>
+      <VerticalViewAngle>50.3</VerticalViewAngle>
       <MinFocusDistance>0.40</MinFocusDistance>
     </LensInfo>
   </CameraModuleConfig>
