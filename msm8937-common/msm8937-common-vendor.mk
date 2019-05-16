@@ -16,8 +16,10 @@
 
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8937-common/proprietary/bin/dpmd:system/bin/dpmd \
+    vendor/xiaomi/msm8937-common/proprietary/bin/wfdservice:system/bin/wfdservice \
     vendor/xiaomi/msm8937-common/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
     vendor/xiaomi/msm8937-common/proprietary/etc/init/dpmd.rc:system/etc/init/dpmd.rc \
+    vendor/xiaomi/msm8937-common/proprietary/etc/init/wfdservice.rc:system/etc/init/wfdservice.rc \
     vendor/xiaomi/msm8937-common/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/xiaomi/msm8937-common/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
     vendor/xiaomi/msm8937-common/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
@@ -25,13 +27,38 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8937-common/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/xiaomi/msm8937-common/proprietary/etc/permissions/qti_libpermissions.xml:system/etc/permissions/qti_libpermissions.xml \
     vendor/xiaomi/msm8937-common/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
+    vendor/xiaomi/msm8937-common/proprietary/etc/wfdconfig.xml:system/etc/wfdconfig.xml \
+    vendor/xiaomi/msm8937-common/proprietary/etc/wfdconfigsink.xml:system/etc/wfdconfigsink.xml \
     vendor/xiaomi/msm8937-common/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
     vendor/xiaomi/msm8937-common/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
     vendor/xiaomi/msm8937-common/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
     vendor/xiaomi/msm8937-common/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
     vendor/xiaomi/msm8937-common/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
     vendor/xiaomi/msm8937-common/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
+    vendor/xiaomi/msm8937-common/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
+    vendor/xiaomi/msm8937-common/proprietary/lib/extractors/libmmparser.so:system/lib/extractors/libmmparser.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/hw/consumerir.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/consumerir.default.so \
+    vendor/xiaomi/msm8937-common/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
+    vendor/xiaomi/msm8937-common/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
+    vendor/xiaomi/msm8937-common/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
+    vendor/xiaomi/msm8937-common/proprietary/lib/libmmparser_lite.so:system/lib/libmmparser_lite.so \
+    vendor/xiaomi/msm8937-common/proprietary/lib/libmmrtpdecoder.so:system/lib/libmmrtpdecoder.so \
+    vendor/xiaomi/msm8937-common/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
+    vendor/xiaomi/msm8937-common/proprietary/lib/libwfdavenhancements.so:system/lib/libwfdavenhancements.so \
+    vendor/xiaomi/msm8937-common/proprietary/lib/libwfdcodecv4l2.so:system/lib/libwfdcodecv4l2.so \
+    vendor/xiaomi/msm8937-common/proprietary/lib/libwfdcommonutils.so:system/lib/libwfdcommonutils.so \
+    vendor/xiaomi/msm8937-common/proprietary/lib/libwfdconfigutils.so:system/lib/libwfdconfigutils.so \
+    vendor/xiaomi/msm8937-common/proprietary/lib/libwfdmminterface.so:system/lib/libwfdmminterface.so \
+    vendor/xiaomi/msm8937-common/proprietary/lib/libwfdmmsink.so:system/lib/libwfdmmsink.so \
+    vendor/xiaomi/msm8937-common/proprietary/lib/libwfdmmsrc.so:system/lib/libwfdmmsrc.so \
+    vendor/xiaomi/msm8937-common/proprietary/lib/libwfdrtsp.so:system/lib/libwfdrtsp.so \
+    vendor/xiaomi/msm8937-common/proprietary/lib/libwfdservice.so:system/lib/libwfdservice.so \
+    vendor/xiaomi/msm8937-common/proprietary/lib/libwfdsm.so:system/lib/libwfdsm.so \
+    vendor/xiaomi/msm8937-common/proprietary/lib/libwfduibcinterface.so:system/lib/libwfduibcinterface.so \
+    vendor/xiaomi/msm8937-common/proprietary/lib/libwfduibcsink.so:system/lib/libwfduibcsink.so \
+    vendor/xiaomi/msm8937-common/proprietary/lib/libwfduibcsinkinterface.so:system/lib/libwfduibcsinkinterface.so \
+    vendor/xiaomi/msm8937-common/proprietary/lib/libwfduibcsrc.so:system/lib/libwfduibcsrc.so \
+    vendor/xiaomi/msm8937-common/proprietary/lib/libwfduibcsrcinterface.so:system/lib/libwfduibcsrcinterface.so \
     vendor/xiaomi/msm8937-common/proprietary/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib64/hw/consumerir.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/consumerir.default.so \
     vendor/xiaomi/msm8937-common/proprietary/lib64/lib-imscamera.so:system/lib64/lib-imscamera.so \
@@ -46,7 +73,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8937-common/proprietary/lib64/libdpmtcm.so:system/lib64/libdpmtcm.so \
     vendor/xiaomi/msm8937-common/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/xiaomi/msm8937-common/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
+    vendor/xiaomi/msm8937-common/proprietary/lib64/libmmosal.so:system/lib64/libmmosal.so \
     vendor/xiaomi/msm8937-common/proprietary/lib64/librcc.so:system/lib64/librcc.so \
+    vendor/xiaomi/msm8937-common/proprietary/lib64/libwfdclient.so:system/lib64/libwfdclient.so \
+    vendor/xiaomi/msm8937-common/proprietary/lib64/libwfdnative.so:system/lib64/libwfdnative.so \
     vendor/xiaomi/msm8937-common/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:system/lib64/vendor.qti.imsrtpservice@1.0.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/xiaomi/msm8937-common/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
@@ -78,6 +108,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8937-common/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
     vendor/xiaomi/msm8937-common/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
     vendor/xiaomi/msm8937-common/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
+    vendor/xiaomi/msm8937-common/proprietary/vendor/bin/wifidisplayhalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wifidisplayhalservice \
     vendor/xiaomi/msm8937-common/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
     vendor/xiaomi/msm8937-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
     vendor/xiaomi/msm8937-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile2.xml \
@@ -110,6 +141,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8937-common/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     vendor/xiaomi/msm8937-common/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/xiaomi/msm8937-common/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.widevine.rc \
+    vendor/xiaomi/msm8937-common/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/xiaomi/msm8937-common/proprietary/vendor/etc/init/vendor.qti.gnss@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.gnss@1.0-service.rc \
     vendor/xiaomi/msm8937-common/proprietary/vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm@1.0-service.rc \
     vendor/xiaomi/msm8937-common/proprietary/vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf@1.0-service.rc \
@@ -125,6 +157,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8937-common/proprietary/vendor/firmware/a530v2_seq.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v2_seq.fw2 \
     vendor/xiaomi/msm8937-common/proprietary/vendor/firmware/a530v3_gpmu.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v3_gpmu.fw2 \
     vendor/xiaomi/msm8937-common/proprietary/vendor/firmware/a530v3_seq.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v3_seq.fw2 \
+    vendor/xiaomi/msm8937-common/proprietary/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/eglSubDriverAndroid.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/egl/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libEGL_adreno.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLESv1_CM_adreno.so \
@@ -168,12 +201,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsutils.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libfastcvadsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvadsp_stub.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvopt.so \
+    vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libgpustats.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpustats.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgsl.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdr_tm.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidl.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libllvm-glnext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-glnext.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libllvm-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-qcom.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmdetect.so \
+    vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libmmosal_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmosal_proprietary.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfgluelayer.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdi.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdp.so \
@@ -202,6 +237,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml2_1.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpplibrary.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libvqzip.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvqzip.so \
+    vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libwfdcommonutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdcommonutils_proprietary.so \
+    vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libwfdhaldsmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhaldsmanager.so \
+    vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libwfdhdcpcp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhdcpcp.so \
+    vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libwfdmmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmmservice.so \
+    vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libwfdmodulehdcpsession.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmodulehdcpsession.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.ssc.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcbassboost.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcreverb.so \
@@ -280,6 +320,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib64/libevent_observer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libevent_observer.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib64/libflp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libflp.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib64/libgeofence.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgeofence.so \
+    vendor/xiaomi/msm8937-common/proprietary/vendor/lib64/libgpustats.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpustats.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib64/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgsl.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib64/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_tm.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib64/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidl.so \
@@ -373,14 +414,15 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8937-common/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db
 
 PRODUCT_PACKAGES += \
-    libgpustats \
     libsdm-disp-vndapis \
     QtiTelephonyService \
     datastatusnotification \
     uceShimService \
     CNEService \
+    WfdService \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
     PowerOffAlarm \
-    TimeService
+    TimeService \
+    WfdCommon
