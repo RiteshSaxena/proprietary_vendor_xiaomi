@@ -21,33 +21,16 @@
     <Name>GameOptimization</Name>
     <Libname>libgameoptfeature.so</Libname>
     <Configs>
-        <Enable>0</Enable>
+        <Enable>1</Enable>
         <MIN_DDR_FREQ>1144</MIN_DDR_FREQ>
         <MAX_MIN_DDR_FREQ>2086</MAX_MIN_DDR_FREQ>
     </Configs>
     <Profiles>
-        <!-- upmigrate 100 + downmigrate 85 -->
         <Profile>
-            0x40C58000, 0x55,0x40C54000, 0x64
-        </Profile>
-
-        <!-- SLB -6 + Memstall 40 + hispeed_load 85 + upmigrate 100 + downmigrate 85 -->
-        <Profile>
-            0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA,
-            0x40C68120, 0xFFFFFFFA, 0x40C68130, 0xFFFFFFFA,
-            0x40C68140, 0xFFFFFFFA, 0x40C68150, 0xFFFFFFFA,
-            0x4343C000, 0x28, 0x43440000, 0x28, 0x41440100, 0x55,
-            0x40C58000, 0x55,0x40C54000, 0x64
-        </Profile>
-
-        <!-- SLB -6 + Memstall 50 + hispeed_load 85 + upmigrate 100 + downmigrate 85 +
-        CPU_BW_SAMPLE_MS = 10ms -->
-        <Profile>
-            0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA,
-            0x40C68120, 0xFFFFFFFA, 0x40C68130, 0xFFFFFFFA,
-            0x40C68140, 0xFFFFFFFA, 0x40C68150, 0xFFFFFFFA,
-            0x4343C000, 0x32, 0x43440000, 0x32, 0x41440100, 0x55,
-            0x40C58000, 0x55,0x40C54000, 0x64, 0x4300C000, 0xA
+            <!-- Colocation v3 1 GHz, Predictive Load 1 -->
+            <DEFAULT>0x40c6c000,1000000,0x41444000,1</DEFAULT>
+            <!-- Colocation v3 1 GHz, Predictive Load 1 -->
+            <SKEW2>0x40c6c000,1000000,0x41444000,1</SKEW2>
         </Profile>
     </Profiles>
 
