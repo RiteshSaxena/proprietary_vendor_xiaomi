@@ -1,0 +1,151 @@
+<!--
+/******************************************************************************
+  @file    GameOptimizationFeature.xml
+  @brief   Game Optimization feature xml
+
+  DESCRIPTION
+      Each feature has an xml file to define the feature components
+
+  ===========================================================================
+  Copyright (c) 2017-2018 Qualcomm Technologies, Inc.
+  All Rights Reserved.
+  Confidential and Proprietary - Qualcomm Technologies, Inc.
+  ===========================================================================
+******************************************************************************/
+-->
+<!--
+    Follows "Data goes into elements, metadata goes into attributes"
+ -->
+
+<Feature>
+    <Name>GameOptimization</Name>
+    <Libname>libgameoptfeature.so</Libname>
+    <Configs>
+        <Enable>0</Enable>
+        <MIN_DDR_FREQ>1144</MIN_DDR_FREQ>
+        <MAX_MIN_DDR_FREQ>2086</MAX_MIN_DDR_FREQ>
+    </Configs>
+    <Profiles>
+        <!-- upmigrate 100 + downmigrate 85 -->
+        <Profile>
+            0x40C58000, 0x55,0x40C54000, 0x64
+        </Profile>
+
+        <!-- SLB -6 + Memstall 40 + hispeed_load 85 + upmigrate 100 + downmigrate 85 -->
+        <Profile>
+            0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA,
+            0x40C68120, 0xFFFFFFFA, 0x40C68130, 0xFFFFFFFA,
+            0x40C68140, 0xFFFFFFFA, 0x40C68150, 0xFFFFFFFA,
+            0x4343C000, 0x28, 0x43440000, 0x28, 0x41440100, 0x55,
+            0x40C58000, 0x55,0x40C54000, 0x64
+        </Profile>
+
+        <!-- SLB -6 + Memstall 50 + hispeed_load 85 + upmigrate 100 + downmigrate 85 +
+        CPU_BW_SAMPLE_MS = 10ms -->
+        <Profile>
+            0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA,
+            0x40C68120, 0xFFFFFFFA, 0x40C68130, 0xFFFFFFFA,
+            0x40C68140, 0xFFFFFFFA, 0x40C68150, 0xFFFFFFFA,
+            0x4343C000, 0x32, 0x43440000, 0x32, 0x41440100, 0x55,
+            0x40C58000, 0x55,0x40C54000, 0x64, 0x4300C000, 0xA
+        </Profile>
+    </Profiles>
+
+    <Meters>
+        <SamplesRequired>4</SamplesRequired>
+        <Meter>
+            <Name>MinDDR</Name>
+            <Triggers>
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_APP_WORKLOAD_TYPE</AsyncId>
+                   <AsyncType>1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_TAP_EVENT</AsyncId>
+                   <AsyncType>-1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_ACTIVITY_START</AsyncId>
+                   <AsyncType>-1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                    <Primary>true</Primary>
+                    <AsyncId>VENDOR_HINT_ACTIVITY_PAUSE</AsyncId>
+                    <AsyncType>-1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                    <Primary>true</Primary>
+                    <AsyncId>VENDOR_HINT_ACTIVITY_RESUME</AsyncId>
+                    <AsyncType>-1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_ACTIVITY_STOP</AsyncId>
+                   <AsyncType>-1</AsyncType>
+                </Trigger>
+
+            </Triggers>
+            <Configs>
+                <MEMLAT_FREQ_VOTE_LITTLE_PATH>/sys/class/devfreq/soc:qcom,cpu0-llcc-ddr-lat/cur_freq</MEMLAT_FREQ_VOTE_LITTLE_PATH>
+                <MEMLAT_FREQ_VOTE_BIG_PATH>/sys/class/devfreq/soc:qcom,cpu6-llcc-ddr-lat/cur_freq</MEMLAT_FREQ_VOTE_BIG_PATH>
+                <MEMLAT_AVAIL_FREQ_LITTLE_PATH>/sys/class/devfreq/soc:qcom,cpu0-llcc-ddr-lat/available_frequencies</MEMLAT_AVAIL_FREQ_LITTLE_PATH>
+            </Configs>
+            <Samples>100</Samples>
+        </Meter>
+
+        <Meter>
+            <Name>Fps</Name>
+            <Triggers>
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_APP_WORKLOAD_TYPE</AsyncId>
+                   <AsyncType>1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_TAP_EVENT</AsyncId>
+                   <AsyncType>-1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_ACTIVITY_START</AsyncId>
+                   <AsyncType>-1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                    <Primary>true</Primary>
+                    <AsyncId>VENDOR_HINT_ACTIVITY_PAUSE</AsyncId>
+                    <AsyncType>-1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                    <Primary>true</Primary>
+                    <AsyncId>VENDOR_HINT_ACTIVITY_RESUME</AsyncId>
+                    <AsyncType>-1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_ACTIVITY_STOP</AsyncId>
+                   <AsyncType>-1</AsyncType>
+                </Trigger>
+
+            </Triggers>
+            <Configs>
+                <FPS_NODE>/sys/class/drm/sde-crtc-0/measured_fps</FPS_NODE>
+                <FPS_PERIODICITY_NODE>/sys/class/drm/sde-crtc-0/fps_periodicity_ms</FPS_PERIODICITY_NODE>
+            </Configs>
+            <Samples>100</Samples>
+        </Meter>
+    </Meters>
+</Feature>
