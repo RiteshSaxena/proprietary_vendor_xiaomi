@@ -143,6 +143,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/polaris/proprietary/vendor/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf \
     vendor/xiaomi/polaris/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
     vendor/xiaomi/polaris/proprietary/vendor/firmware/bu64748gwz.prog:$(TARGET_COPY_OUT_VENDOR)/firmware/bu64748gwz.prog \
+    vendor/xiaomi/polaris/proprietary/vendor/firmware/dipper_ois.coeff:$(TARGET_COPY_OUT_VENDOR)/firmware/dipper_ois.coeff \
+    vendor/xiaomi/polaris/proprietary/vendor/firmware/dipper_ois.prog:$(TARGET_COPY_OUT_VENDOR)/firmware/dipper_ois.prog \
     vendor/xiaomi/polaris/proprietary/vendor/firmware/libpn553_rec.so:$(TARGET_COPY_OUT_VENDOR)/firmware/libpn553_rec.so \
     vendor/xiaomi/polaris/proprietary/vendor/firmware/tas2559_uCDSP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tas2559_uCDSP.bin \
     vendor/xiaomi/polaris/proprietary/vendor/lib/camera/com.qti.sensor.imx363.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.imx363.so \
