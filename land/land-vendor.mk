@@ -1591,9 +1591,7 @@ PRODUCT_PACKAGES += \
     QtiTelephonyService \
     datastatusnotification \
     uceShimService \
-    CNEService \
     WfdService \
-    com.qualcomm.location \
     ims \
     qcrilmsgtunnel \
     PowerOffAlarm \
