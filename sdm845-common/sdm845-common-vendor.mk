@@ -168,7 +168,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sdm845-common/proprietary/vendor/bin/pm-service:$(TARGET_COPY_OUT_VENDOR)/bin/pm-service \
     vendor/xiaomi/sdm845-common/proprietary/vendor/bin/port-bridge:$(TARGET_COPY_OUT_VENDOR)/bin/port-bridge \
     vendor/xiaomi/sdm845-common/proprietary/vendor/bin/power_off_alarm:$(TARGET_COPY_OUT_VENDOR)/bin/power_off_alarm \
-    vendor/xiaomi/sdm845-common/proprietary/vendor/bin/poweroffm64:$(TARGET_COPY_OUT_VENDOR)/bin/poweroffm64 \
     vendor/xiaomi/sdm845-common/proprietary/vendor/bin/ppd:$(TARGET_COPY_OUT_VENDOR)/bin/ppd \
     vendor/xiaomi/sdm845-common/proprietary/vendor/bin/qrtr-cfg:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-cfg \
     vendor/xiaomi/sdm845-common/proprietary/vendor/bin/qrtr-lookup:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-lookup \
@@ -296,7 +295,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sdm845-common/proprietary/vendor/lib/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so \
     vendor/xiaomi/sdm845-common/proprietary/vendor/lib/hw/sound_trigger.primary.sdm845.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.sdm845.so \
     vendor/xiaomi/sdm845-common/proprietary/vendor/lib/hw/vendor.qti.esepowermanager@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.esepowermanager@1.0-impl.so \
-    vendor/xiaomi/sdm845-common/proprietary/vendor/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so \
     vendor/xiaomi/sdm845-common/proprietary/vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so \
     vendor/xiaomi/sdm845-common/proprietary/vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.iop@2.0-impl.so \
     vendor/xiaomi/sdm845-common/proprietary/vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so \
@@ -534,7 +532,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sdm845-common/proprietary/vendor/lib/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.postproc@1.0.so \
     vendor/xiaomi/sdm845-common/proprietary/vendor/lib/vendor.qti.data.factory@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.factory@1.0.so \
     vendor/xiaomi/sdm845-common/proprietary/vendor/lib/vendor.qti.esepowermanager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.esepowermanager@1.0.so \
-    vendor/xiaomi/sdm845-common/proprietary/vendor/lib/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.alarm@1.0.so \
     vendor/xiaomi/sdm845-common/proprietary/vendor/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so \
     vendor/xiaomi/sdm845-common/proprietary/vendor/lib/vendor.qti.hardware.data.dynamicdds@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.dynamicdds@1.0.so \
     vendor/xiaomi/sdm845-common/proprietary/vendor/lib/vendor.qti.hardware.data.latency@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.latency@1.0.so \
@@ -866,7 +863,7 @@ PRODUCT_PACKAGES += \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
-    PowerOffAlarm \
     TimeService \
+    PowerOffAlarm \
     WfdCommon \
     chargeonlymode
