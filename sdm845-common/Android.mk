@@ -165,12 +165,4 @@ LOCAL_PRIVILEGED_MODULE := true
 LOCAL_PRODUCT_MODULE := true
 include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := chargeonlymode
-LOCAL_MODULE_OWNER := xiaomi
-LOCAL_SRC_FILES := proprietary/bin/chargeonlymode
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := EXECUTABLES
-include $(BUILD_PREBUILT)
-
 endif
