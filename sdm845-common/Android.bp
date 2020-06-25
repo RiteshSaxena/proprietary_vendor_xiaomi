@@ -20,6 +20,21 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+	name: "libqct_resampler",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/system/lib/libqct_resampler.so"],
+		},
+	},
+	compile_multilib: "32",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libplatformconfig",
 	owner: "xiaomi",
 	strip: {
@@ -36,6 +51,16 @@ cc_prebuilt_library_shared {
 	compile_multilib: "both",
 	prefer: true,
 	soc_specific: true,
+}
+
+android_app_import {
+	name: "workloadclassifier",
+	owner: "xiaomi",
+	apk: "proprietary/system/app/workloadclassifier/workloadclassifier.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
 }
 
 android_app_import {
